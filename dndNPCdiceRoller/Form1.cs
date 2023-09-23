@@ -10,17 +10,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace dndNPCdiceRoller
 {
+    public class Test
+    { 
+        Class1 c1 = new Class1();
+        
+    }
+
+
     public partial class Form1 : Form
     {
+        
         Random rnd = new Random();
         int HP, AC, strength, dexterity, constitution, intelligence, wisdom, charisma, spellSaveDC, proficiencyBonus, speed, rollResult, profAttackBonus, damageDiceQuantity, damageDiceSize, damageResult, spellDamageDiceSize, spellDamageDiceQuantity, spellRange, characterLevel, spellSlotLevel;
         string dndClass, weaponRanged, weaponMelee, weaponProficiencies, feats, proficientSkills, proficientSaves, rollInQuestion, damageType, weaponTags, abilities, weaponOffhand, saveAgainstSpell, spellDescription, spellDamageType, spellName, spellType;
         bool blessed, baned;
         string[] spellList;
         int[] testCase;
-
+        
         string[] skillList = {"Acrobatics", "Animal Handling", "Arcana", "Athletics", "Deception", "History", "Insight", "Intimidation", "Investigation", "Medicine", "Nature", "Perception",
         "Performance", "Persuasion", "Religion", "Sleight of Hand", "Stealth", "Survival"};
         //class saves
@@ -37,6 +47,8 @@ namespace dndNPCdiceRoller
         string sorcererSaves = "constitution, charisma";
         string warlockSaves = "wisdom, charisma";
         string wizardSaves = "intelligence, wisdom";
+        
+        
 
         //proficiency Bonus Progression
 
@@ -53,6 +65,7 @@ namespace dndNPCdiceRoller
             targetSpeed.Text = speed.ToString();
             featsTarget.Text = feats;  
             targetProfBonus.Text = proficiencyBonus.ToString();
+            
         }
 
         public Form1()
