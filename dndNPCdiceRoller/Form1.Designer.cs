@@ -63,7 +63,7 @@
             this.buttonRoll.TabIndex = 0;
             this.buttonRoll.Text = "Roll";
             this.buttonRoll.UseVisualStyleBackColor = true;
-            this.buttonRoll.Click += new System.EventHandler(this.buttonRoll_Click);
+            this.buttonRoll.Click += new System.EventHandler(this.ButtonRoll_Click);
             // 
             // label1
             // 
@@ -88,13 +88,7 @@
             this.NPCselectorComboBox.FormattingEnabled = true;
             this.NPCselectorComboBox.Items.AddRange(new object[] {
             "Acolyte",
-            "Bandit Mastermind",
-            "Bandit Rogue",
-            "Bandit Thug",
-            "Duelist",
-            "Tank Fighter",
-            "Vrasza Yrm Pike Guard",
-            "Vrasza Yrm Shocktrooper"});
+            "Duelist"});
             this.NPCselectorComboBox.Location = new System.Drawing.Point(50, 29);
             this.NPCselectorComboBox.Name = "NPCselectorComboBox";
             this.NPCselectorComboBox.Size = new System.Drawing.Size(154, 21);
@@ -115,7 +109,6 @@
             "Charisma Save",
             "Melee Attack",
             "Ranged Attack",
-            "Spell Attack",
             "Spells",
             "Skill Checks"});
             this.rollSelectorComboBox.Location = new System.Drawing.Point(50, 61);
@@ -123,7 +116,7 @@
             this.rollSelectorComboBox.Size = new System.Drawing.Size(154, 21);
             this.rollSelectorComboBox.TabIndex = 4;
             this.rollSelectorComboBox.Text = "Initiative";
-            this.rollSelectorComboBox.SelectedIndexChanged += new System.EventHandler(this.rollSelectorComboBox_SelectedIndexChanged);
+            this.rollSelectorComboBox.SelectedIndexChanged += new System.EventHandler(this.RollSelectorComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -167,7 +160,7 @@
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Result:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // resultTarget
             // 
@@ -259,7 +252,7 @@
             this.blessedCheckbox.TabIndex = 19;
             this.blessedCheckbox.Text = "Blessed";
             this.blessedCheckbox.UseVisualStyleBackColor = true;
-            this.blessedCheckbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.blessedCheckbox.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // baneCheckbox
             // 
@@ -270,16 +263,19 @@
             this.baneCheckbox.TabIndex = 20;
             this.baneCheckbox.Text = "Baned";
             this.baneCheckbox.UseVisualStyleBackColor = true;
-            this.baneCheckbox.CheckedChanged += new System.EventHandler(this.baneCheckbox_CheckedChanged);
+            this.baneCheckbox.CheckedChanged += new System.EventHandler(this.BaneCheckbox_CheckedChanged);
             // 
             // spellListComboBox
             // 
             this.spellListComboBox.FormattingEnabled = true;
+            this.spellListComboBox.Items.AddRange(new object[] {
+            "None"});
             this.spellListComboBox.Location = new System.Drawing.Point(210, 61);
             this.spellListComboBox.Name = "spellListComboBox";
             this.spellListComboBox.Size = new System.Drawing.Size(152, 21);
             this.spellListComboBox.TabIndex = 21;
-            this.spellListComboBox.SelectedIndexChanged += new System.EventHandler(this.spellListComboBox_SelectedIndexChanged);
+            this.spellListComboBox.Text = "None";
+            this.spellListComboBox.SelectedIndexChanged += new System.EventHandler(this.SpellListComboBox_SelectedIndexChanged);
             // 
             // comboBoxSpellSlotLevel
             // 
